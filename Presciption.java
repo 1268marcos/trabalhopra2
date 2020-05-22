@@ -9,7 +9,7 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 
-@Entity(tableName = "prescipt")
+@Entity(tableName = "presciptions")
 
 
 
@@ -27,9 +27,9 @@ public class Presciption{
 
     private String mDrug;
 
-    public prescipt(@Nullable String CreationDate , String Symptom , int Rating , String Drug) {
+    public Presciption(@Nullable String creationDate , String symptom , int rating , String drug) {
         mSymptom = symptom;
-        mDrug = Drug;
+        mDrug = drug;
         mRating = rating;
         mCreationDate = creationDate;
     }
@@ -47,7 +47,7 @@ public class Presciption{
     }
 
     public void setsymptom(String symptom) {
-        msymptom = symptom;
+        mSymptom = symptom;
     }
 
     public String getDrug() {
